@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about-page-linear-gradient {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#eb3c5a),
+    to(#f67831)
+  );
+}
