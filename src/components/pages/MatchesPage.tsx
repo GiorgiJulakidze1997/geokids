@@ -1,9 +1,11 @@
 // import React from 'react'
 
+import NavImg from "../navImg/NavImg";
+
 export default function MatchesPage() {
   return (
     <div>
-      <h1>MatchesPage</h1>
+      <NavImg title="matches" />
     </div>
-  )
+  );
 }

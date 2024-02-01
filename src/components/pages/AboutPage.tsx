@@ -1,9 +1,11 @@
 // import React from 'react'
 
+import NavImg from "../navImg/NavImg";
+
 export default function AboutPage() {
   return (
     <div>
-      <h1 className="text-red-700">AboutPage</h1>
+      <NavImg title="about" />
     </div>
   );
 }
