@@ -3,7 +3,7 @@
 export default function PlayerPage() {
   return (
     <div>
-      <h1>PlayerPage</h1>
+      <h1>PlayerPage  მოთამაშის ფეიჯი 'გიორგი ჯულაყიძე'</h1>
     </div>
   )
 }
