@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "/logo/main-logo.avif";
 
 import NavImg from "../navImg/NavImg";
