@@ -1,9 +1,11 @@
 // import React from 'react'
 
+import NavImg from "../navImg/NavImg";
+
 export default function ClassPage() {
   return (
     <div>
-      <h1>ClassPage</h1>
+      <NavImg title="class" />
     </div>
-  )
+  );
 }
