@@ -11,3 +11,7 @@
     to(#f67831)
   );
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
