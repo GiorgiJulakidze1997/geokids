@@ -1,11 +1,11 @@
 // import React from 'react'
 
-import NavImg from "../navImg/NavImg";
+import ContactPageComp from "../contactPage/ContactPageComp";
 
 export default function ContactPage() {
   return (
-    <div>
-      <NavImg title="contact" />
-    </div>
+    <main className="pb-9">
+      <ContactPageComp />
+    </main>
   );
 }
