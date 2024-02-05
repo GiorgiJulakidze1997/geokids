@@ -7,8 +7,8 @@ import ClassPhotos from "../photos/ClassPhotos";
 export default function ClassPage() {
   return (
     <div>
-      <VideoCarousel />
       <NavImg title="class" />
+      <VideoCarousel />
       <ClassPhotos />
     </div>
   );
