@@ -1,27 +1,24 @@
 import { Carousel } from "antd";
+import fox from "../../assets/video/fox.mp4";
 
-const contentStyle: React.CSSProperties = {
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
 const VideoCarousel = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <Carousel autoplay>
-        <div>
-          <h3 style={contentStyle}>1</h3>
+        <div className="h-[40rem]">
+          <video src={fox} controls className="w-full"/>
         </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
+        <div className="h-[40rem]">
+          <video src={fox} controls className="w-full"/>
         </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
+        <div className="h-[40rem]">
+          <video src={fox} controls className="w-full"/>
         </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
+        <div className="h-[40rem]">
+          <video src={fox} controls className="w-full"/>
+        </div>
+        <div className="h-[40rem]">
+          <video src={fox} controls className="w-full"/>
         </div>
       </Carousel>
     </div>
