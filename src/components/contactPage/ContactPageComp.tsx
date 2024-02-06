@@ -15,15 +15,15 @@ const ContactPageComp = () => {
         <NavImg title="contact" />
       </section>
       <a href={mapUrl} target="_blank">
-        <img src={mapPhoto} alt="map photo" />
+        <img src={mapPhoto} alt="map photo" className="mx-auto" />
       </a>
-      <section className="px-5 max-w-[500px] mx-auto min-[600px]:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] mt-20">
-        <div className="flex flex-col gap-10">
+      <section className="px-5 max-w-[500px] mx-auto min-[600px]:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px]">
+        <div className="flex flex-col gap-10 mt-20">
           <div className="flex flex-col gap-4">
             <h2 className="text-black font-semibold uppercase text-2xl">
               contact us
             </h2>
-            <div className="flex items-center gap-10 mt-7">
+            <div className="flex items-center gap-10 mt-3">
               <img src={locationIcon} alt="" width={40} />
               <div>
                 <p className="text-[#bdbdbd] text-lg">Our Location</p>
@@ -51,8 +51,14 @@ const ContactPageComp = () => {
             </h2>
             <form action="">
               <div className="flex flex-col">
-                <input type="text" />
-                <input type="email" />
+                <input
+                  type="text"
+                  className="w-full h-[51px] border-[1px] border-[#e1e1e1]"
+                />
+                <input
+                  type="email"
+                  className="w-full h-[51px] border-[1px] border-[#e1e1e1]"
+                />
               </div>
               <textarea></textarea>
             </form>
