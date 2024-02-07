@@ -31,9 +31,9 @@ const ContactPageComp = () => {
         <img src={mapPhoto} alt="map photo" className="mx-auto" />
       </a>
       <section className="px-5 max-w-[500px] mx-auto min-[600px]:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px]">
-        <div className="flex flex-col gap-10 mt-20">
-          <div className="flex flex-col gap-4">
-            <h2 className="text-black font-semibold uppercase text-2xl">
+        <div className="flex flex-col gap-10 mt-20 lg:flex-row">
+          <div className="flex flex-col gap-4 lg:gap-7">
+            <h2 className="text-black font-semibold uppercase text-2xl lg:w-[400px]">
               contact us
             </h2>
             <div className="flex items-center gap-10 mt-5">
@@ -58,12 +58,12 @@ const ContactPageComp = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="lg:w-full">
             <h2 className="text-black font-semibold uppercase text-2xl">
               leave a comment
             </h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex flex-col gap-8 mt-10 relative">
+              <div className="flex flex-col gap-8 mt-10 relative lg:flex-row">
                 <input
                   type="text"
                   className="w-full pl-5 h-[51px] border-[1px] border-[#e1e1e1] outline-none"
@@ -76,7 +76,7 @@ const ContactPageComp = () => {
                   }
                 />
                 {errors.name?.message ? (
-                  <p className="absolute top-[53px] left-5">
+                  <p className="absolute top-[53px] left-5 text-[#FF7979]">
                     {errors.name?.message}
                   </p>
                 ) : null}
@@ -97,7 +97,7 @@ const ContactPageComp = () => {
                   }
                 />
                 {errors.email?.message ? (
-                  <p className="absolute top-[136px] left-5">
+                  <p className="absolute top-[136px] left-5 lg:left-[438px] lg:top-[53px] text-[#FF7979]">
                     {errors.email?.message}
                   </p>
                 ) : null}
