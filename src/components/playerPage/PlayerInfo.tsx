@@ -1,7 +1,29 @@
+import { List } from "antd";
+
+const data = [
+  "სისწრაფე(10 მ.)",
+  "სისწრაფე(20 მ.)",
+  "სისწრაფე(30 მ.)",
+  "სისწრაფე(50 მ.)",
+  "სისწრაფე(100 მ.)",
+  "პენალტი (მარჯვ.)",
+  "პენალტი (მარცხ.)",
+  "დარტყმა( 16.5 მ (ცენტრი)) (ფეხი მარჯ.)",
+  "დარტყმა( 16.5 მ (ცენტრი)) (ფეხი მარცხ.)",
+  "დარტყმა( 16.5 მ (რკალი მარცხენა)) (ფეხი მარჯ.)",
+  "დარტყმა( 16.5 მ (რკალი მარცხენა)) (ფეხი მარცხ.)",
+  "დარტყმა( 16.5 მ (რკალი მარჯვენა)) (ფეხი მარჯ.)",
+  "დარტყმა( 16.5 მ (რკალი მარჯვენა)) (ფეხი მარცხ.)",
+  "ჟონგლირება (ფეხი მარჯ.)",
+  "ჟონგლირება (ფეხი მარცხ.)",
+  "ჟონგლირება (თავი)",
+  "ჟონგლირება (მუხლი მარჯვ.)",
+  "ჟონგლირება (მუხლი მარცხ.)",
+];
 const PlayerInfo = () => {
   return (
     <div className="container mx-auto mt-10">
-      <div className="min-h-[100vh] w-[80%] max-w-full bg-red-500 mx-auto">
+      <div className="min-h-[100vh] w-[80%] max-w-full bg-orange-200 mx-auto">
         <div className="border-b flex">
           <div className="border-r w-fit px-10 py-3 border-green-400">
             <img
@@ -31,6 +53,15 @@ const PlayerInfo = () => {
               </div>
             </div>
           </div>
+        </div>
+        {/* side panel */}
+        <div className="w-[40%] min-h-[80dvh]">
+          <List
+            size="large"
+            bordered
+            dataSource={data}
+            renderItem={(item) => <List.Item>{item}</List.Item>}
+          />
         </div>
       </div>
     </div>
