@@ -20,6 +20,26 @@ const data = [
   "ჟონგლირება (მუხლი მარჯვ.)",
   "ჟონგლირება (მუხლი მარცხ.)",
 ];
+const resultsData = [
+    "3 წამი",
+    "10 წამი",
+    "30 წამი",
+    "35 წამი",
+    "40 წამი",
+    "მარჯვენა ფეხი არუვარგა",
+    "არც მარცხენა",
+    "უნიჭოა არაფერი გამოვა",
+    "უნიჭოა არაფერი გამოვა",
+    "უნიჭოა არაფერი გამოვა",
+    "უნიჭოა არაფერი გამოვა",
+    "უნიჭოა არაფერი გამოვა",
+    "უნიჭოა არაფერი გამოვა",
+    "ნეიმარს შეშურდებოდა",
+    "ნეიმარს შეშურდებოდა",
+    "ნეიმარს შეშურდებოდა",
+    "ნეიმარს შეშურდებოდა",
+    "ნეიმარს შეშურდებოდა",
+]
 const PlayerInfo = () => {
   return (
     <div className="container mx-auto mt-10">
@@ -55,13 +75,23 @@ const PlayerInfo = () => {
           </div>
         </div>
         {/* side panel */}
-        <div className="w-[40%] min-h-[80dvh]">
-          <List
-            size="large"
-            bordered
-            dataSource={data}
-            renderItem={(item) => <List.Item>{item}</List.Item>}
-          />
+        <div className="flex">
+          <div className="w-[50%] min-h-[80dvh]">
+            <List
+              size="large"
+              bordered
+              dataSource={data}
+              renderItem={(item) => <List.Item>{item}</List.Item>}
+            />
+          </div>
+          <div className="w-full min-h-[80dvh]">
+            <List
+              size="large"
+              bordered
+              dataSource={resultsData}
+              renderItem={(item) => <List.Item>{item}</List.Item>}
+            />
+          </div>
         </div>
       </div>
     </div>
