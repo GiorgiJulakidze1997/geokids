@@ -75,7 +75,7 @@ const TeamCalendar: React.FC = () => {
 
   return (
     <div className="container mx-auto">
-      <Calendar cellRender={cellRender} />;
+      <Calendar cellRender={cellRender} />
     </div>
   );
 };

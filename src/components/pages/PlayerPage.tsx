@@ -1,9 +1,11 @@
-// import React from 'react'
+import PlayerInfo from "../playerPage/PlayerInfo";
 
-export default function PlayerPage() {
+const PlayerPage = () => {
   return (
     <div>
-      <h1>PlayerPage  მოთამაშის ფეიჯი 'გიორგი ჯულაყიძე'</h1>
+      <PlayerInfo />
     </div>
-  )
-}
+  );
+};
+
+export default PlayerPage;
